@@ -1,7 +1,4 @@
-/* font-family: 'Playfair Display', serif; */
-
 /* Total settings =================================== */
-
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -16,15 +13,32 @@ body {
 	line-height: 26px;
 	font-weight: 400;
 	color: #212121;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
 
-img {
-	width: 100%;
-	display: inline-block;
+h2,
+h3 {
+	font-family: 'Playfair Display', serif; 
+	font-weight: 700;
 }
+
+h2 {
+	margin-top: 45px;
+	font-size: 42px;
+}
+
+h3 { font-size: 26px; }
 
 li {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 p {
@@ -32,16 +46,149 @@ p {
 	line-height: 20px;
 }
 
-/* =========== Aside ==================================== */
+.post-head {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 45px;
+	margin: 25px 0;
+}
+
+/* =========== Lines ==================================== */
+.logo::after,
+.social-box::before {
+	content: '';
+	display: block;
+	width: 400%;
+	border-bottom: 2px dashed #212121;
+	opacity: .6;
+	position: absolute;
+	left: -40%;
+}
+.logo::after { bottom: 0; }
+.social-box::before { top: 0; }
+/* =========== Aside + Content ================================ */
 .panel-aside {
 	width: 20vw;
 	height: 100vh;
 	background: #7dc8ff;
+	overflow: hidden;
+	position: fixed;
+}
+
+.wrapper-aside {
+	margin: auto 14%;
+	height: 100vh;
+	position: relative;
+}
+
+.content {
+	width: 80vw;
+	margin-left: 20vw;
+	overflow: hidden;
+}
+
+.wrapper {
+	padding: 0 70px;
 }
 
 /* =========== Header =================================== */
+.logo {
+	padding: 45px 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.logo__link {
+	position: absolute;
+	left: -20%;
+	top: 0;
+	right: -20%;
+	bottom: 0;
+}
+
+.block, 
+.logo__mid {
+	display: inline-block;
+}
+
+.navigation { padding: 45px 0; }
+.menu__item { margin-bottom: 30px; }
+.menu__item:last-child { margin-bottom: 0; }
+.menu__item--link {
+	display: block;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #212121;
+	padding: 10px 0;
+}
 /* =========== Footer =================================== */
+.footer {
+	padding-bottom: 45px;
+	position: absolute;
+	bottom: 0;
+}
+.social-box {
+	padding-top: 45px;
+	padding-bottom: 25px;
+	position: relative;
+}
+
+.social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.social__item { margin-right: 0.7vw; }
+.social__item:last-child { margin-right: 0; }
+
+.social__item--link {
+	font-size: 25px;
+	color: #212121;
+}
+
+.author {
+	font-size: 15px;
+	font-weight: 700;
+}
 /* =========== Services ================================= */
+.services {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.services__item {
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 25px;
+}
+.services__item:nth-child(3n) { margin-right: 0; }
+
+.serv-layout { background: url(../img/services/layout.svg) no-repeat 50% top; }
+.serv-cms { background: url(../img/services/cms.svg) no-repeat top center; }
+.serv-design { background: url(../img/services/web-design.svg) no-repeat top center; }
+.serv-edits { background: url(../img/services/edits.svg) no-repeat top center; }
+.serv-logo { background: url(../img/services/design-logo.svg) no-repeat top center; }
+.serv-key { background: url(../img/services/turnkey-website.svg) no-repeat top center; }
+
+.services__item--img {
+	width: 100%;
+	height: 140px;
+	-webkit-background-size: 170px 140px;
+	background-size: 170px 140px;
+	margin-bottom: 10px;
+}
+.description { margin-top: 10px; }
 /* =========== Portfolio ================================ */
 /* =========== Advateges ================================ */
 /* =========== About me ================================= */
