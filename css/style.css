@@ -24,50 +24,50 @@ h2,
 h3 {
 	font-family: 'Playfair Display', serif; 
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 
-h2 {
-	margin-top: 45px;
-	font-size: 42px;
-}
+h2 { font-size: 42px; }
 
 h3 { font-size: 26px; }
 
-li {
-	list-style: none;
-}
+li { list-style: none; }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none; }
 
 p {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
+.heading { margin: 70px auto 25px; }
+.services-box .heading { margin-top: 45px; }
+
+
+span { display: block; }
+
 .post-head {
-	display: block;
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
 	font-size: 24px;
-	line-height: 45px;
-	margin: 25px 0;
+	line-height: 32px;
+	margin-top: 25px;
 }
 
 /* =========== Lines ==================================== */
-.logo::after,
-.social-box::before {
+.logo:after,
+.social-box:before {
 	content: '';
 	display: block;
 	width: 400%;
-	border-bottom: 2px dashed #212121;
+	border-bottom: 1.5px dashed #2d74a8;
 	opacity: .6;
 	position: absolute;
 	left: -40%;
 }
-.logo::after { bottom: 0; }
-.social-box::before { top: 0; }
+.logo:after { bottom: 0; }
+.social-box:before { top: 0; }
+
 /* =========== Aside + Content ================================ */
 .panel-aside {
 	width: 20vw;
@@ -95,9 +95,10 @@ p {
 
 /* =========== Header =================================== */
 .logo {
-	padding: 45px 0;
+	padding-bottom: 45px;
+  margin-top: 45px;
 	font-family: 'Playfair Display', serif;
-	font-size: 40px;
+	font-size: 42px;
 	font-weight: 700;
 	text-transform: uppercase;
 	position: relative;
@@ -124,8 +125,10 @@ p {
 	text-transform: uppercase;
 	font-size: 24px;
 	color: #212121;
+	letter-spacing: .2px;
 	padding: 10px 0;
 }
+
 /* =========== Footer =================================== */
 .footer {
 	padding-bottom: 45px;
@@ -150,7 +153,7 @@ p {
 .social__item:last-child { margin-right: 0; }
 
 .social__item--link {
-	font-size: 25px;
+	font-size: 26px;
 	color: #212121;
 }
 
@@ -158,6 +161,7 @@ p {
 	font-size: 15px;
 	font-weight: 700;
 }
+
 /* =========== Services ================================= */
 .services {
 	display: -webkit-flex;
@@ -170,7 +174,6 @@ p {
 .services__item {
 	width: 32%;
 	margin-right: 2%;
-	margin-bottom: 25px;
 }
 .services__item:nth-child(3n) { margin-right: 0; }
 
@@ -182,14 +185,58 @@ p {
 .serv-key { background: url(../img/services/turnkey-website.svg) no-repeat top center; }
 
 .services__item--img {
-	width: 100%;
+	width: auto;
 	height: 140px;
-	-webkit-background-size: 170px 140px;
-	background-size: 170px 140px;
-	margin-bottom: 10px;
+	margin: 0 auto 10px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .description { margin-top: 10px; }
+
 /* =========== Portfolio ================================ */
+.portfolio {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.portfolio__item {
+	width: 33%;
+	height: 100%;
+	margin-right: .5%;
+	background-color: #d0d0d0;
+}
+.portfolio-item:nth-child(3) {
+	margin-right: 0;
+}
+
 /* =========== Advateges ================================ */
+.advanteges {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.advanteges__item {
+	width: 24%;
+	margin-right: 1.33%;
+	text-align: center;
+}
+.advanteges__item:last-child { margin-right: 0; }
+
+.adv-time{ background-image: url(../img/advantages/on-time.svg); }
+.adv-quality{ background-image: url(../img/advantages/quality.svg); }
+.adv-wishes{ background-image: url(../img/advantages/wishes.svg); }
+.adv-solutions{ background-image: url(../img/advantages/solutions.svg); }
+
+.advanteges__item--img {
+	width: 106px;
+	height: 97px;
+	margin: 0 auto;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
 /* =========== About me ================================= */
 /* =========== Contact ================================== */
