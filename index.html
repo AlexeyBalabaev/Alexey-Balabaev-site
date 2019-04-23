@@ -202,23 +202,23 @@
 			<div class="about">
 				<div class="about__photo">
 					<img src="" alt="">
-					<div class="about__description">
-						<span class="about__description--name">
-							Алексей Балабаев.
-						</span>
-						<span class="about__description--date">
-							24 года - (28.04.1994).
-						</span>
-						<span class="about__description--study">
-							Закончил <a href="">ТГТУ</a>.
-						</span>
-						<span class="about__description--exp">
-							Опыт работы в сфере Front-end: 4 месяца.
-						</span>
-						<p>
-							Недавно начал заниматься фрилансом. Верстаю, занимаюсь front-end разработкой и немного дизайном. Мои навыки: HTML, CSS, JavaScript, Sass, BEM, git, svg (векторная графика), pixel perfect, responsive, adaptive, bootstrap 4 и многое другое.
-						</p>
-					</div>
+				</div>
+				<div class="about__description">
+					<span class="about__description--name about-me">
+						Алексей Балабаев.
+					</span>
+					<span class="about__description--date about-me">
+						24 года - (28.04.1994).
+					</span>
+					<span class="about__description--study about-me">
+						Закончил <a href="">ТГТУ</a>.
+					</span>
+					<span class="about__description--exp about-me">
+						Опыт работы в сфере Front-end: 4 месяца.
+					</span>
+					<p class="about-me">
+						Недавно начал заниматься фрилансом. Верстаю, занимаюсь front-end разработкой и немного дизайном. Мои навыки: HTML, CSS, JavaScript, Sass, BEM, git, svg (векторная графика), pixel perfect, responsive, adaptive, bootstrap 4 и многое другое.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -226,9 +226,11 @@
 <!-- Section contact ---------------------------------------------->
 	<address class="contact-box">
 		<div class="wrapper">
-			<div class="heading">
-				<h2>Контакты</h2>
-				<span class="post-head">Вы можете связаться со мной в социальных сетях и мы обсудим ваш проект.</span>
+			<div class="contact-head">
+				<div class="heading heading-contact">
+					<h2>Контакты</h2>
+					<span class="post-head">Вы можете связаться со мной в социальных сетях и мы обсудим ваш проект.</span>
+				</div>
 				<div class="contacts">
 					<ul class="contacts-social">
 						<li class="contacts-social__item">
@@ -255,18 +257,24 @@
 					</ul>
 				</div>
 			</div>
-			<div class="form-box">
+			<div class="form">
 				<span class="form-desc">
 					Или же, можете заполнить форму и я свяжусь с вами сам.
 				</span>
-				<form action="">
-					<div class="left-form">
-						<input type="text">
-						<input type="text">
+				<form action="#">
+					<div class="form-box">
+						<div class="left-form">
+							<label for="name">Введите имя</label>
+							<input type="text" id="name" class="">
+							<label for="email">Введите e-mail</label>
+							<input type="text" id="email" class="">
+						</div>
+						<div class="right-form">
+							<label for="message">Текст сообщения</label>
+							<textarea id="message"></textarea>
+						</div>
 					</div>
-					<div class="right-form">
-						<textarea name="" id="" cols="30" rows="10"></textarea>
-					</div>
+					<button class="btn">Отправить</button>
 				</form>
 			</div>
 		</div>

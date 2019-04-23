@@ -135,7 +135,7 @@ address {
 
 /* =========== Footer =================================== */
 .footer {
-	padding-bottom: 45px;
+	padding-bottom: 70px;
 	position: absolute;
 	bottom: 0;
 }
@@ -178,6 +178,7 @@ address {
 .services__item {
 	width: 32%;
 	margin-right: 2%;
+	margin-bottom: 25px;
 }
 .services__item:nth-child(3n) { margin-right: 0; }
 
@@ -204,6 +205,7 @@ address {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	margin-bottom: 25px;
 }
 .portfolio__item {
 	width: 33%;
@@ -238,9 +240,109 @@ address {
 .advanteges__item--img {
 	width: 106px;
 	height: 97px;
-	margin: 0 auto;
+	margin: 0 auto 25px;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
+
+.post-advanteges__other {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 25px 0;
+}
 /* =========== About me ================================= */
+.about {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.about__photo {
+	min-width: 20%;
+	height: 240px;
+	background: #d0d0d0;
+	margin-right: 3%;
+}
+.about__description {
+	min-width: 77%;
+}
+.about-me {
+	font-size: 20px;
+	line-height: 28px;
+	color: #212121;
+}
 /* =========== Contact ================================== */
+.contact-box { padding-bottom: 70px; }
+.contacts {
+	width: 20%;
+	margin: 70px auto 25px;
+}
+
+.heading-contact {
+	width: 75%;
+	margin-right: 5%;
+}
+
+.contact-head {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.contacts-social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-align-items: center;
+	align-items: center;
+}
+.contacts-social__item {
+	margin-right: 25px;
+}
+.contacts-social__item:last child { margin-right: 0; }
+.contacts-social__item--link {
+	font-size: 35px;
+	color: #212121;
+}
+.form-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.left-form {
+	width: 39%;
+	margin-right: 2%;
+}
+.right-form {
+	width: 59%;
+}
+
+/* =========== Form ================================== */
+input[type="text"],
+textarea {
+	background: #cccccc;
+	border: 1px solid #212121;
+	width: 100%;
+}
+input[type="text"] {
+	height: 55px;
+	border-radius: 7px 0 7px 7px;
+}
+textarea {
+	height: 100%;
+	resize: none;
+	border-radius: 0 7px 7px 7px;
+}
