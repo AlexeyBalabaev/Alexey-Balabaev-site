@@ -320,7 +320,7 @@ address {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin: 25px auto;
+	margin: 25px auto 0;
 }
 
 .left-form {
@@ -352,8 +352,9 @@ textarea {
 label {
 	display: block;
 	position: relative;
+	cursor: text;
 	left: 20px;
-	top: -50px;
+	top: -55px;
 	transition: all .3s;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 24px;
@@ -364,19 +365,18 @@ label {
 input[type="text"] {
 	height: 55px;
 	border-radius: 7px 0 7px 7px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 input[type="text"]:last-child { margin-bottom: 0; }
 
-input[type="text"]:focus + label {
-	top: -90px;
-}
+input[type="text"]:focus + label { top: -97px; }
 input[type="text"]:valid + label {
-  top: -90px;
+  top: -97px;
+  color: #cccccc;
 }
 
 textarea {
-	height: 90%;
+	height: 245px;
 	resize: none;
 	border-radius: 0 7px 7px 7px;
 }
@@ -398,3 +398,17 @@ textarea::-moz-input-placeholder {
 }
 textarea:focus::-webkit-input-placeholder { color: transparent; }
 textarea:focus::-moz-input-placeholder { color: transparent; }
+
+/* =========== Buttons ================================== */
+.btn {
+	background: #ff9187;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	width: 305px;
+	height: 45px;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 22px;
+	color: #212121;
+}
