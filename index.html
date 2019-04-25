@@ -45,27 +45,41 @@
 			<div class="social-box">
 				<ul class="social">
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-github-squared"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="GitHub"><i class="icon-github-squared"></i></dfn>
+						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-linkedin-squared"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="LinkedIn"><i class="icon-linkedin-squared"></i></dfn>
+						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-facebook-squared"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="Facebook"><i class="icon-facebook-squared"></i></dfn>
+						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-vkontakte"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="Вконтакте"><i class="icon-vkontakte"></i></dfn>
+						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-instagram"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="Instagram"><i class="icon-instagram"></i></dfn>
+						</a>
 					</li>
 					<li class="social__item">
-						<a href="" class="social__item--link"><i class="icon-mail-alt"></i></a>
+						<a href="" class="social__item--link">
+							<dfn data-info="g-mail"><i class="icon-mail-alt"></i></dfn>
+						</a>
 					</li>
 				</ul>
 			</div>
 			<div class="author">
-				<span>@ Alexey Balabaev</span>
+				<a href="гитхаб">
+					<span>@ Alexey Balabaev</span>
+				</a>
 			</div>
 		</footer>
 	</div>
@@ -265,17 +279,19 @@
 					<div class="form-box">
 						<div class="left-form">
 							<input type="text" id="name" class="name" required>
-							<label for="name">Ваше имя</label>
+							<label for="name">Ваше имя*</label>
 							<input type="text" id="email" class="email" required>
-							<label for="email">Ваш e-mail</label>
+							<label for="email">Ваш e-mail*</label>
 							<input type="text" id="teleg" class="email" required>
-							<label for="teleg">Ваш telegram</label>
+							<label for="teleg">Ваш telegram*</label>
 						</div>
 						<div class="right-form">
 							<textarea id="message" placeholder="Текст сообщения"></textarea>
 						</div>
 					</div>
-					<button class="btn">Отправить</button>
+					<button class="btn">
+						<span>Отправить</span>
+					</button>
 				</form>
 			</div>
 		</div>
@@ -283,5 +299,6 @@
 </main>
 <!-- Optional JavaScript ------------------------------------------>
 
+<script src="js/custom.js"></script>
 </body>
 </html>
