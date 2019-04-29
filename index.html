@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<mate http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Alexey Balabev</title>
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Playfair+Display:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/fontello.css">
@@ -88,9 +89,9 @@
 <!-- Content part [main > all sections] --------------------------->
 <main class="content">
 	
-<div ><a class="back_to_top" title="Наверх"><i class="icon-up"></i></a></div>
+<div><span class="back-top" title="Наверх"><i class="icon-up"></i></span></div>
 <!-- Section services --------------------------------------------->
-	<section class="services-box">
+	<section class="services-box sect">
 		<div class="wrapper">
 			<div class="services-heading">
 				<h2>Услуги</h2>
@@ -143,7 +144,7 @@
 		</div>
 	</section>
 <!-- Section portfolio -------------------------------------------->
-	<section class="portfolio-box">
+	<section class="portfolio-box sect">
 		<div class="wrapper">
 			<div class="heading">
 				<h2>Портфолио</h2>
@@ -169,7 +170,7 @@
 		</div>
 	</section>
 <!-- Section advanteges ------------------------------------------->
-	<section class="advanteges-box">
+	<section class="advanteges-box sect">
 		<div class="wrapper">
 			<div class="heading">
 				<h2>Преимущества</h2>
@@ -207,7 +208,7 @@
 		</div>
 	</section>
 <!-- Section about me --------------------------------------------->
-	<section class="about-me-box">
+	<section class="about-me-box sect">
 		<div class="wrapper">
 			<div class="heading">
 				<h2>Обо мне</h2>
@@ -238,7 +239,7 @@
 		</div>
 	</section>
 <!-- Section contact ---------------------------------------------->
-	<address class="contact-box">
+	<address class="contact-box sect">
 		<div class="wrapper">
 			<div class="contact-head">
 				<div class="heading heading-contact">
@@ -282,8 +283,6 @@
 							<label for="name">Ваше имя*</label>
 							<input type="text" id="email" class="email" required>
 							<label for="email">Ваш e-mail*</label>
-							<input type="text" id="teleg" class="email" required>
-							<label for="teleg">Ваш telegram</label>
 						</div>
 						<div class="right-form">
 							<textarea id="message" placeholder="Текст сообщения"></textarea>
