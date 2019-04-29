@@ -21,6 +21,7 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	overflow-x: hidden;
 }
 
 h2,
