@@ -506,6 +506,7 @@ dfn:hover::before {opacity: 1;}
 	height: 240px;
 	background: #d0d0d0;
 	margin-right: 3%;
+	border-radius: 7px 0 7px 7px;
 }
 .about__description {
 	min-width: 77%;
@@ -517,10 +518,6 @@ dfn:hover::before {opacity: 1;}
 }
 /* =========== Contact ================================== */
 .contact-box { padding-bottom: 70px; }
-.contacts {
-	width: 20%;
-	margin: 70px auto 25px;
-}
 
 .heading-contact {
 	width: 75%;
@@ -533,6 +530,11 @@ dfn:hover::before {opacity: 1;}
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+
+.contacts {
+	width: 245px;
+	margin: 70px auto 25px;
 }
 
 .contacts-social {
