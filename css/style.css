@@ -130,6 +130,7 @@ address {
 	overflow: hidden;
 	border-radius: 5px 5px 5px 0;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .back-top-show {
@@ -454,6 +455,7 @@ dfn:hover::before {opacity: 1;}
 	display: flex;
 	margin-bottom: 25px;
 }
+
 .portfolio__item {
 	width: 33%;
 	height: 50%;
@@ -474,6 +476,13 @@ dfn:hover::before {opacity: 1;}
 	left: 0;
 	right: 0;
 	bottom: 0;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.portfolio__item:hover .portfolio__item--link {
+	background: rgba(33,33,33,.5);
 }
 
 .info-link {
@@ -570,7 +579,7 @@ dfn:hover::before {opacity: 1;}
 
 .contacts {
 	width: 245px;
-	margin: 70px 0 25px 15px;
+	margin: 0 0 25px 15px;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -619,7 +628,157 @@ dfn:hover::before {opacity: 1;}
 
 
 @media screen and (min-width: 1370px) {
-	.wrapper {
-		padding: 0 100px;
+	.wrapper { padding: 0 100px; }
+}
+
+@media screen and (max-width: 1370px) {
+	h2 { font-size: 36px; }
+	h3 { font-size: 24px; }
+	p { font-size: 14px; }
+
+	.heading { margin-top: 50px; }
+	.post-head {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.post-advanteges__other,
+	.about-me { font-size: 18px; }
+
+	.navigation { padding: 35px 0; }
+	.menu__item { margin-bottom: 12px; }
+	.menu__item--link { font-size: 20px; }
+
+	.social { 
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap; 
+	}
+
+	.heading-contact { width: 75%; }
+
+	.contacts { width: 170px; }
+	.contacts-social:first-child { margin-bottom: 14px; }
+	.contacts-social__item { margin-right: 14px; }
+	.contacts-social__item--link { font-size: 28px; }
+
+	input[type="text"], textarea { font-size: 20px; }
+	label { font-size: 20px; }
+	textarea::-webkit-input-placeholder { font-size: 20px; }
+	textarea::-moz-input-placeholder { font-size: 20px; }
+}
+
+@media screen and (max-width: 1022px) {
+	.panel-aside { display: none; }
+	.content {
+		width: 100vw;
+		margin-left: 0;
+	}
+
+	.wrapper { padding: 0 35px; }
+
+	.heading { margin: 40px auto 20px 0; }
+	.heading::before,
+	.services-heading::before,
+	.heading::after,
+	.services-heading::after { display: none; }
+
+	.back-top {
+		bottom: 5px;
+		left: 5px;
+	}
+
+	.portfolio {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.portfolio__item,
+	.portfolio__item:nth-child(3) {
+		width: 49.5%;
+		margin-right: 1%;
+		margin-bottom: 8px;
+		border-radius: 7px 0 7px 7px;
+	}
+	.portfolio__item:nth-child(2) {
+		margin-right: 0;
+		border-radius: 0 7px 7px 7px;
+	}
+	.portfolio__item:nth-child(3),
+	.portfolio__item:last-child { margin-bottom: 0; }
+}
+
+@media screen and (max-width: 766px) {
+	h2 { font-size: 26px; }
+	h3 { font-size: 18px; }
+	p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.heading, .services-heading { margin: 35px auto 10px 0; }
+
+	.post-head {
+		font-size: 18px;
+		line-height: 24px;
+		margin-top: 15px;
+	}
+
+	.services__item,
+	.services__item:nth-child(3n) {
+		width: 48%;
+		margin-right: 4%;
+	}
+	.services__item:nth-child(2n) {margin-right: 0;}
+	.services__item:last-child,
+	.services__item:nth-last-child(2) { margin-bottom: 0; }
+	.services__item--img { height: 110px; }
+
+	.portfolio__item,
+	.portfolio__item:nth-child(3) {
+		width: 100%;
+		margin-right: 0;
+		border-radius: 0 7px 7px 7px;
+	}
+	.info-link {
+		width: 20px;
+		height: 20px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.advanteges {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.advanteges__item {
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 15px;
+	}
+	.advanteges__item:nth-child(2) {
+		margin-right: 0;
+	}
+	.advanteges__item:last-child,
+	.advanteges__item:nth-last-child(2) { margin-bottom: 0; }
+	.post-advanteges__other,
+	.about-me {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.about { display: block; }
+	.about__photo {
+		width: 100%;
+		margin-right: 0;
+		border-radius: 0 7px 7px 7px;
+		margin-bottom: 15px;
 	}
 }
