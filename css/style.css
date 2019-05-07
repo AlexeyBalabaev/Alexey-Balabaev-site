@@ -155,6 +155,7 @@ textarea {
 label {
 	display: block;
 	position: relative;
+	width: 200px;
 	cursor: text;
 	left: 20px;
 	top: -55px;
@@ -622,10 +623,9 @@ dfn:hover::before {opacity: 1;}
 	margin-right: 2%;
 	position: relative;
 }
-.right-form {
-	width: 59%;
-}
+.right-form { width: 59%; }
 
+.author-mob { display: none; }
 
 @media screen and (min-width: 1370px) {
 	.wrapper { padding: 0 100px; }
@@ -664,7 +664,8 @@ dfn:hover::before {opacity: 1;}
 	.contacts-social__item { margin-right: 14px; }
 	.contacts-social__item--link { font-size: 28px; }
 
-	input[type="text"], textarea { font-size: 20px; }
+	input[type="text"],
+	textarea,
 	label { font-size: 20px; }
 	textarea::-webkit-input-placeholder { font-size: 20px; }
 	textarea::-moz-input-placeholder { font-size: 20px; }
@@ -688,6 +689,11 @@ dfn:hover::before {opacity: 1;}
 	.back-top {
 		bottom: 5px;
 		left: 5px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		opacity: .8;
+		font-size: 25px;
 	}
 
 	.portfolio {
@@ -710,6 +716,22 @@ dfn:hover::before {opacity: 1;}
 	}
 	.portfolio__item:nth-child(3),
 	.portfolio__item:last-child { margin-bottom: 0; }
+
+	.left-form { height: 50px; }
+
+	.author-box { position: relative; }
+	.author-mob {
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: -50px;
+	}
+
+	.btn {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.btn::before { display: none; }
 }
 
 @media screen and (max-width: 766px) {
@@ -720,12 +742,23 @@ dfn:hover::before {opacity: 1;}
 		line-height: 20px;
 	}
 
+	.wrapper { padding: 0 10px; }
+
 	.heading, .services-heading { margin: 35px auto 10px 0; }
 
 	.post-head {
 		font-size: 18px;
 		line-height: 24px;
 		margin-top: 15px;
+	}
+
+	.back-top {
+		bottom: 10px;
+		left: 10px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
 	}
 
 	.services__item,
@@ -768,8 +801,7 @@ dfn:hover::before {opacity: 1;}
 	}
 	.advanteges__item:last-child,
 	.advanteges__item:nth-last-child(2) { margin-bottom: 0; }
-	.post-advanteges__other,
-	.about-me {
+	.post-advanteges__other {
 		font-size: 14px;
 		line-height: 22px;
 	}
@@ -781,4 +813,55 @@ dfn:hover::before {opacity: 1;}
 		border-radius: 0 7px 7px 7px;
 		margin-bottom: 15px;
 	}
+	.about-me {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.contact-head { display: block; }
+	.heading-contact { width: 100%; }
+	.contacts {
+		position: static;
+		width: 100%;
+		margin: 15px auto 25;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.contacts-social:first-child {
+		margin-bottom: 0;
+		margin-right: 15px;
+	}
+	.contacts-social__item { margin-right: 15px; }
+
+	.form-box { display: block; }
+	.left-form,
+	.right-form {
+		width: 100%;
+		margin-right: 0;
+	}
+	input[type="text"],
+	textarea {
+		font-size: 18px;
+		padding-left: 15px;
+	}
+
+	label {
+		font-size: 18px;
+		top: -35px;
+		left: 15px;
+	}
+	input[type="text"] {
+		height: 45px;
+		margin-bottom: 0;
+		border-radius: 0 7px 7px 7px;
+	}
+	textarea::-webkit-input-placeholder { font-size: 18px; }
+	textarea::-moz-input-placeholder { font-size: 18px; }
+
+	input[type="text"]:focus + label { top: -70px; }
+	input[type="text"]:valid + label { top: -70px; }
+
 }
