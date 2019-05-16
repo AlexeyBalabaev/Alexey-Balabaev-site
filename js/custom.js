@@ -90,8 +90,10 @@
       closeButtons = document.querySelectorAll('.js-modal-close');
 
   modalButtons.forEach(function(item){
+
     item.addEventListener('click', function(e) {
       e.preventDefault();
+
       var modalId = this.getAttribute('data-modal'),
       modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
       modalElem.classList.add('active');
@@ -115,7 +117,6 @@
     var key = e.keyCode;
 
     if (key == 27) {
-
       document.querySelector('.modal.active').classList.remove('active');
       document.querySelector('.overlay').classList.remove('active');
     };
