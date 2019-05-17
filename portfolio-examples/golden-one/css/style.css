@@ -497,6 +497,10 @@ header {
 	margin-right: 10px;
 }
 
+.social a:hover {
+	background-color: #7dc8ff;
+}
+
 .team-post-meta {
 	text-align: center;
 	max-width: 500px;
@@ -609,4 +613,8 @@ header {
 }
 .social-footer a:last-child {
 	margin-right: 0;
+}
+
+.social-footer a:hover {
+	background: #7dc8ff;
 }

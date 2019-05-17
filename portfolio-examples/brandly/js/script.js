@@ -14,9 +14,14 @@ $(function() {
 		return false;
 	});
 
-	$('.banner-slider, .testimonial-slider').slick({
+	$('.banner-slider').slick({
 		arrows: false,
 		dots: true
+	});
+
+	$('.show-slider').slick({
+		arrows: false,
+		dots: true,
 	});
 
 	$('.portfolio-slider').slick({
