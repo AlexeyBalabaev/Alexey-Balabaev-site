@@ -93,8 +93,6 @@ span { display: block; }
 	margin-top: 25px;
 }
 
-address { font-style: normal; }
-
 /* =========== Lines ==================================== */
 .logo::after,
 .social-box::before {
