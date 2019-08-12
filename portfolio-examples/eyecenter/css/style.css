@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	font-style: 18px;
+	font-size: 18px;
 	line-height: 24px;
 	color: #a77c5a;
 }
@@ -9,8 +9,36 @@ li { list-style: none; }
 
 .wrapper {
 	max-width: 1300px;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
+}
+
+.heading {
+	display: inline-block;
+	font-size: 24px;
+	color: #000;
+	text-transform: uppercase;
+	position: relative;
+	top: 0;
+	left: -155px;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.heading::before {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #bcbcbc;
+	position: absolute;
+	top: 50%;
+	left: -58px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .thin-part { font-weight: 300; }
@@ -109,4 +137,40 @@ li { list-style: none; }
 	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+/* offer */
+.offer-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer-box__left {
+	
+}
+
+.offer-back1 {
+	max-width: 725px;
+	width: 100%;
+	height: 620px;
+	background: url(../img/offer1.jpg) no-repeat center;
+}
+.offer-back2 {
+	max-width: 505px;
+	width: 100%;
+	height: 910px;
+	background: url(../img/offer2.jpg) no-repeat center;
+}
+
+.offer-box__left--bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 }
