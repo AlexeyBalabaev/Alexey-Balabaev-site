@@ -41,16 +41,19 @@ li { list-style: none; }
 	transform: translateY(-50%);
 }
 
+.heading-places {	top: 100px; }
+
 .thin-part { font-weight: 300; }
 .bold-part { font-weight: 700; }
 
 /* button */
 .btn {
+	display: block;
 	width: 305px;
 	height: 77px;
 	border: 1px solid;
 	background-color: transparent;
-	margin-top: 15px;
+	margin: 15px auto 0;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -72,12 +75,11 @@ li { list-style: none; }
 	right: 15%;
 }
 
-.offer-btn {
-	color: #fff;
-}
-.offer-btn:after {
-	border-color: #fff;
-}
+.white-btn { color: #fff; }
+.white-btn:after { border-color: #fff; }
+
+.black-btn { color: #000; }
+.black-btn:after { border-color: #000; }
 
 /* header */
 .header {
@@ -278,4 +280,73 @@ li { list-style: none; }
 	font-size: 24px;
 	color: #b2b2b2;
 	text-transform: lowercase;
+}
+
+/* bestseller */
+.bestseller-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.bestseller-box__item {
+	width: 25%;
+	cursor: pointer;
+}
+
+.bestseller-box__item--top { position: relative; }
+.bestseller-box__item--bottom { margin-top: 30px; }
+
+.product-focus,
+.product-name,
+.product-discond,
+.product-price {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.product-focus {
+	opacity: 0;
+	width: 75%;
+	height: 100%;
+	font-size: 36px;
+	line-height: 11.5em;
+	color: #a77c5a;
+	border: 20px solid rgba(167,124,90,.2);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: .4s all;
+	-o-transition: .4s all;
+	transition: .4s all;
+}
+
+.bestseller-box__item:hover .product-focus {
+	display: block;
+	opacity: 1;
+}
+
+.product-name { color: #a77c5a; }
+
+.product-discond {
+	color: #b2b2b2;
+	margin-top: 20px;
+}
+
+.product-price {
+	font-size: 30px;
+	color: #212121;
+	margin-top: 20px;
 }
