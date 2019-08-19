@@ -41,7 +41,14 @@ li { list-style: none; }
 	transform: translateY(-50%);
 }
 
-.heading-places {	top: 100px; }
+.heading-places {
+	top: 100px;
+	left: -145px;
+}
+.heading-up {
+	top: -120px;
+	left: -105px;
+}
 
 .thin-part { font-weight: 300; }
 .bold-part { font-weight: 700; }
@@ -352,3 +359,34 @@ li { list-style: none; }
 }
 
 .arrival { margin-top: 25px; }
+
+/* brands */
+.brand {
+	background: #e5e5e5;
+	margin-top: 100px;
+	padding: 100px 0;
+}
+
+.brand-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.brand-box__item {
+	width: 25%;
+	align-items: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.brand-box__item--desc {
+	display: block;
+}
