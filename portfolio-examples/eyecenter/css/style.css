@@ -290,6 +290,8 @@ li { list-style: none; }
 }
 
 /* bestsellers and new arrivals */
+.arrival { margin-top: 100px; }
+
 .goods-box {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -358,8 +360,6 @@ li { list-style: none; }
 	margin-top: 20px;
 }
 
-.arrival { margin-top: 25px; }
-
 /* brands */
 .brand {
 	background: #e5e5e5;
@@ -387,6 +387,40 @@ li { list-style: none; }
 	flex-direction: column;
 }
 
+.brand-box__item--logo {
+	max-width: 250px;
+	width: 80%;
+	height: 250px;
+	border: 1px solid #aaa;
+}
+
+.brand-logo {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	opacity: .6;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.brand-box__item:hover .brand-logo { opacity: 1; }
+
 .brand-box__item--desc {
 	display: block;
+	font-weight: 500;
+	letter-spacing: .8px;
+	text-transform: uppercase;
+	margin-top: 20px;
 }
+
+/* articles */
+.article-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
