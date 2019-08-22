@@ -501,6 +501,7 @@ li { list-style: none; }
 	width: 98px;
 	height: 98px;
 	background: #f2ebe6;
+	border: none;
 	position: absolute;
 	top: 1px;
 	right: 26px;
@@ -523,4 +524,40 @@ li { list-style: none; }
 	margin: 0 auto;
 	padding: 40px 120px 40px 50px;
 	border: 1px solid #a77c5a;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: .7px;
+	line-height: 100px;
+	color: #212121;
+}
+
+.form-box__input--field::-webkit-input-placeholder {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: .7px;
+	line-height: 100px;
+	color: #212121;
+	text-transform: uppercase;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+.form-box__input--field::-moz-input-placeholder {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: .7px;
+	line-height: 100px;
+	color: #212121;
+	text-transform: uppercase;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+.form-box__input--field:focus::-webkit-input-placeholder { color: transparent; }
+.form-box__input--field:focus::-moz-input-placeholder { color: transparent; }
+
+/* footer */
+.footer {
+	background: #f2ebe6;
+	padding-top: 85px;
 }
