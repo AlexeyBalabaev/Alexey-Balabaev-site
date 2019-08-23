@@ -559,5 +559,39 @@ li { list-style: none; }
 /* footer */
 .footer {
 	background: #f2ebe6;
-	padding-top: 85px;
+	padding: 85px 0;
+}
+
+.info-box {
+	max-width: 868px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-box__item:first-child { width: 66%; }
+.info-box__item:last-child { width: 33%; }
+
+.info-box__item--heading {
+	font-size: 24px;
+	letter-spacing: .8px;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+
+.info-box__item--brands {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-brand {
+	width: 50%;
 }
