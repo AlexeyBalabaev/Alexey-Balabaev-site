@@ -208,7 +208,7 @@ img {
 .banner__item:last-child { margin-right: 0; }
 
 .banner__item--heading {
-	font-size: 150px;
+	font-size: 100px;
 	line-height: 90px;
 	letter-spacing: 25px;
 	text-transform: uppercase;
@@ -470,8 +470,14 @@ img {
 	font-weight: 500;
 	letter-spacing: .8px;
 	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
 	margin-top: 20px;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
 }
+
+.brand-box__item:hover .brand-box__item--desc { border-color: #a77c5a; }
 
 /* articles */
 .article {
@@ -685,6 +691,8 @@ img {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
 }
 
 .footer-logo {
