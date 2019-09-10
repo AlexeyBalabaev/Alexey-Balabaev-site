@@ -23,6 +23,7 @@ img {
 	font-size: 24px;
 	color: #000;
 	text-transform: uppercase;
+	cursor: default;
 	position: relative;
 	top: 0;
 	left: -155px;
@@ -138,6 +139,7 @@ img {
 .logo {
 	font-size: 48px;
 	line-height: 18px;
+	cursor: default;
 }
 
 .head-menu {
@@ -189,6 +191,7 @@ img {
 	font-size: 14px;
 	line-height: 30px;
 	margin-left: 15px;
+	cursor: default;
 }
 
 .banner {
@@ -214,6 +217,7 @@ img {
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
+	cursor: default;
 }
 
 .banner__item--image {
@@ -228,6 +232,7 @@ img {
 	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
+	cursor: default;
 }
 
 /* offer */
@@ -287,6 +292,7 @@ img {
 	font-weight: 600;
 	color: #fff;
 	text-align: center;
+	cursor: default;
 }
 
 .offer-box__left--bottom {
@@ -301,6 +307,7 @@ img {
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .feature {
@@ -530,6 +537,7 @@ img {
 	letter-spacing: 1px;
 	text-align: center;
 	color: #fff;
+	cursor: default;
 }
 
 /* contact */
@@ -657,6 +665,7 @@ img {
 	letter-spacing: .8px;
 	text-transform: uppercase;
 	margin-bottom: 45px;
+	cursor: default;
 }
 
 .info-box__item--brands {
@@ -673,7 +682,10 @@ img {
 }
 .column-brand:first-child { margin-right: 4%; }
 
-.footer-item { color: #b2b2b2; }
+.footer-item {
+	color: #b2b2b2;
+	cursor: pointer;
+}
 
 .footer__bottom {
 	display: -webkit-flex;
@@ -695,7 +707,10 @@ img {
 	align-items: center;
 }
 
+.footer-achiv:last-child { margin-left: 25px; }
+
 .footer-logo {
 	font-size: 48px;
 	color: #b8b3b0;
+	cursor: default;
 }
