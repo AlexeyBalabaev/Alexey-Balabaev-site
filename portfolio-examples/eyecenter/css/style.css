@@ -768,12 +768,6 @@ img {
 		height: 23px;
 	}
 
-	.info-box {
-		min-width: 550px;
-		width: 100%;
-		display: block;
-	}
-
 	.goods-box {
 		flex-wrap: wrap;
 	}
@@ -839,6 +833,13 @@ img {
 
 	.footer { padding: 50px 0; }
 
+
+	.info-box {
+		min-width: 400px;
+		width: 100%;
+		display: block;
+	}
+
 	.info-box__item--heading {
 		font-size: 20px;
 		margin-bottom: 25px;
@@ -848,4 +849,10 @@ img {
 		width: 100%;
 		margin-bottom: 20px;
 	}
+
+	.footer-logo { font-size: 36px; }
+}
+
+@media screen and (max-width: 784px) {
+	
 }
