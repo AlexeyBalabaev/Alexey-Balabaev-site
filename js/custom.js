@@ -2,7 +2,6 @@
   'use strict';
 
   // Menu-toggle
-
   let btn = document.querySelector('.menu-toggle');
   let nav = document.querySelector('.panel-aside');
 
@@ -12,7 +11,6 @@
   });
 
   // Smooth scroll
-
   let requestAnimationFrame = window.requestAnimationFrame ||
                               window.mozRequestAnimationFrame ||
                               window.webkitRequestAnimationFrame ||
@@ -98,70 +96,55 @@
   document.querySelector(".year").innerHTML = year;
 
   // Modal window
+  // use library closest
+  !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
 
-  !function(e) {
-    "function" != typeof e.matches && (e.matches = e.msMatchesSelector ||
-      e.mozMatchesSelector ||
-      e.webkitMatchesSelector ||
-      function(e) {
-        for(var t = this , o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;) ++n;
-      return Boolean(o[n])}),
-    "function" != typeof e.closest && (e.closest = function(e) {
-      for (var t = this; t && 1 === t.nodeType;) {
-        if (t.matches(e)) return t;
-        t = t.parentNode
-      }
-      return null
-    })}
-    (window.Element.prototype);
+  document.addEventListener('DOMContentLoaded', function() {
 
-    document.addEventListener('DOMContentLoaded', function() {
+    let modalButtons = document.querySelectorAll('.js-open-modal');
+    let overlay = document.querySelector('.js-overlay-modal');
+    let closeButtons = document.querySelectorAll('.js-modal-close');
 
-    let modalButtons = document.querySelectorAll('.js-open-modal'),
-        overlay      = document.querySelector('.js-overlay-modal'),
-        closeButtons = document.querySelectorAll('.js-modal-close');
-
-    modalButtons.forEach(function(item){
+    modalButtons.forEach(function(item) {
 
       item.addEventListener('click', function(e) {
         e.preventDefault();
 
-        let modalId = this.getAttribute('data-modal'),
-        modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+        let modalId = this.getAttribute('data-modal');
+        let modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+
         modalElem.classList.add('active-modal');
         overlay.classList.add('active-modal');
-      });
-
-    });
-
-    closeButtons.forEach(function(item){
-
-      item.addEventListener('click', function(e) {
-        let parentModal = this.closest('.modal');
-
-        parentModal.classList.remove('active-modal');
-        overlay.classList.remove('active-modal');
-      });
-
-    });
-
-    document.body.addEventListener('keyup', function (e) {
-      let key = e.keyCode;
-
-      if (key == 27) {
-        document.querySelector('.modal.active-modal').classList.remove('active-modal');
-        document.querySelector('.overlay').classList.remove('active-modal');
-      };
-    }, false);
-
-    overlay.addEventListener('click', function() {
-      document.querySelector('.modal.active-modal').classList.remove('active-modal');
-      this.classList.remove('active-modal');
     });
   });
 
-  // Scroll to up
+  closeButtons.forEach(function(item) {
 
+    item.addEventListener('click', function(e) {
+      let parentModal = this.closest('.modal');
+
+      parentModal.classList.remove('active-modal');
+      overlay.classList.remove('active-modal');
+    });
+
+  });
+
+  document.body.addEventListener('keyup', function (e) {
+    let key = e.keyCode;
+
+    if (key == 27) {
+      document.querySelector('.modal.active-modal').classList.remove('active-modal');
+      document.querySelector('.overlay').classList.remove('active-modal');
+    };
+  }, false);
+
+  overlay.addEventListener('click', function() {
+    document.querySelector('.modal.active-modal').classList.remove('active-modal');
+    this.classList.remove('active-modal');
+  });
+});
+
+  // Scroll to up
   function trackScroll() {
     let scrolled = window.pageYOffset;
     let coords = document.documentElement.clientHeight;
@@ -187,7 +170,6 @@
   goTopBtn.addEventListener('click', backToTop);
 
   // Animation for button
-
   document.querySelector('.btn').onmousemove = e => {
 
     const x = e.pageX - e.target.offsetLeft;

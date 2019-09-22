@@ -468,7 +468,7 @@ dfn:hover::before {opacity: 1;}
 
 .portfolio__item {
 	width: 33%;
-	height: 50%;
+	height: 12vw;
 	margin-right: .5%;
 	margin-bottom: 10px;
 	overflow: hidden;
@@ -478,7 +478,7 @@ dfn:hover::before {opacity: 1;}
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
 	position: relative;
 }
-.portfolio__item:nth-child(3) {
+.portfolio__item:nth-child(3n) {
 	margin-right: 0;
 	border-radius: 0 7px 7px 7px;
 }
@@ -518,7 +518,6 @@ dfn:hover::before {opacity: 1;}
 
 .more-works {
 	position: relative;
-	height: 12vw;
 	-webkit-box-shadow: 0 0 0 transparent;
 	box-shadow: 0 0 0 transparent;
 }
@@ -555,6 +554,7 @@ dfn:hover::before {opacity: 1;}
 .more-works__link:hover + .more-works__desc {
 	width: 85%;
 	height: 85%;
+	line-height: 9.5vw;
 	top: 50%;
 	left: 50%;
   transform: translate(-50%, -50%);
