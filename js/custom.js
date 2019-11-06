@@ -115,34 +115,34 @@
 
         modalElem.classList.add('active-modal');
         overlay.classList.add('active-modal');
-    });
-  });
-
-  closeButtons.forEach(function(item) {
-
-    item.addEventListener('click', function(e) {
-      let parentModal = this.closest('.modal');
-
-      parentModal.classList.remove('active-modal');
-      overlay.classList.remove('active-modal');
+      });
     });
 
-  });
+    closeButtons.forEach(function(item) {
 
-  document.body.addEventListener('keyup', function (e) {
-    let key = e.keyCode;
+      item.addEventListener('click', function(e) {
+        let parentModal = this.closest('.modal');
 
-    if (key == 27) {
+        parentModal.classList.remove('active-modal');
+        overlay.classList.remove('active-modal');
+      });
+
+    });
+
+    document.body.addEventListener('keyup', function (e) {
+      let key = e.keyCode;
+
+      if (key == 27) {
+        document.querySelector('.modal.active-modal').classList.remove('active-modal');
+        document.querySelector('.overlay').classList.remove('active-modal');
+      };
+    }, false);
+
+    overlay.addEventListener('click', function() {
       document.querySelector('.modal.active-modal').classList.remove('active-modal');
-      document.querySelector('.overlay').classList.remove('active-modal');
-    };
-  }, false);
-
-  overlay.addEventListener('click', function() {
-    document.querySelector('.modal.active-modal').classList.remove('active-modal');
-    this.classList.remove('active-modal');
+      this.classList.remove('active-modal');
+    });
   });
-});
 
   // Scroll to up
   function trackScroll() {
