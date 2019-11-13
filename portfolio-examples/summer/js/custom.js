@@ -50,7 +50,7 @@ $(document).ready(function() {
 		]
 	});
 
-	const $menu = $('.menu-toggle');
+	/*var $menu = $('.menu-toggle');
 
 	$(document).mouseup(e => {
 		if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
@@ -64,7 +64,6 @@ $(document).ready(function() {
 
 	$('.nav-button').on('click', () => {
 		$menu.toggleClass('is-active');
-	});
-
+	});*/
 
 });
